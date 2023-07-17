@@ -11,4 +11,11 @@ def login(usr, pwd):
     else:
         return False
 
+def create_account(usr, pwd):
+    conn = sqlite3.connect('login.db')
+    c = conn.cursor()
+    c.execute("INSERT INTO users VALUES (?, ?)", (usr, pwd))
+    conn.commit()
+    conn.close()
 
+# create_account("Sudhulyf", "1234")
