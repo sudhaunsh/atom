@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>
+        <svg width="1800" height="100">
+            <rect width="1800" height="100" style="fill:rgb(0, 132, 255);stroke-width:3;stroke:rgb(0,132,255 )"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50px" fill="white">DenV Online</text>
+        </svg>
+    </h1>
+    <body>
+        <form action = "" method = "post">
+            <label for="Name">Name</label><br>
+            <input type="text" id="nm" name="nm" value="{{request.form.nm}}"><br>
+            <label for="Age">Age</label><br>
+            <input type="text" id="Age" name="Age" value="{{request.form.Age}}"><br>
+            <label for="Date_onset">Date of onset</label><br>
+            <input type="text" id="Date_onset" name="Date_onset" value="{{request.form.Date_onset}}"><br>
+            <label for="Date_a">Date of first test</label><br>
+            <input type="text" id="Date_a" name="Date_a" value="{{request.form.Date_a}}"><br>
+            <label for="Count_a">Count of first test</label><br>
+            <input type="text" id="Counta" name="Counta" value="{{request.form.Counta}}"><br>
+            <label for="Date_b">Date of second test</label><br>
+            <input type="text" id="Date_b" name="Date_b" value="{{request.form.Date_b}}"><br>
+            <label for="Count_b">Count of second test</label><br>
+            <input type="text" id="Count_b" name="Count_b" value="{{request.form.Count_b}}"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
