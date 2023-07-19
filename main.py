@@ -47,5 +47,5 @@ def use_denv():
     return flask.render_template('use_denv.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    # app.run(host = "0.0.0.0", port = 80, debug=False)
+    # app.run(debug=True)
+    app.run(host = "0.0.0.0", port = 80, debug=False)
