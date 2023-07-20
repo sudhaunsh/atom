@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <h1>
-        Resullts from DenV
-    </h1>
+    <head>
+        <h1>
+            <svg width="1800" height="100">
+                <rect width="1800" height="100" style="fill:rgb(0, 132, 255);stroke-width:3;stroke:rgb(0,132,255 )"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50px" fill="white">Result from DenV</text>
+                <img src="{{url_for('static', filename='denvlogo.png')}}" alt="DenV" width="150" height="150" style="position: absolute; right: 75px; top: 0px;">
+            </svg>
+        </h1>
+    </head>
     <body>
         Name: {{Name}}<br>
-        Age: {{Age}}<br>
+        Age: {{Age}} Years<br>
         Date of onset: {{Date_onset}}<br>
-        Confidence of report: {{Confidence}}<br><br>
+        Confidence of report: {{Confidence}} %<br><br>
         <table>
             <tr>
                 <th>Day</th>
@@ -65,5 +71,6 @@
                 <td>{{HC10}}</td>
             </tr>
         </table>
+        <p>{{Advice}}</p>
     </body>
 </html>
