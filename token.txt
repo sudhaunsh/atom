@@ -1,1 +1,2 @@
 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
+gunicorn -w 4 -b 0.0.0.0:4000 main:app
