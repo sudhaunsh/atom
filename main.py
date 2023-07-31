@@ -1,7 +1,6 @@
 import flask 
 from login import*
-from denV.back_end import*
-from denV.advisory import*
+from services.denv_back_end import*
 
 
 app = flask.Flask(__name__)
