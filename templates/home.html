@@ -5,11 +5,19 @@
     <title>Home</title>
 </head>
 <h1>
-    <svg width="1800" height="100">
-        <rect width="1800" height="100" style="fill:rgb(0, 132, 255);stroke-width:3;stroke:rgb(0,132,255 )"/>
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50px" fill="white">Welcome to the Atom Framework</text>
-        <img src="{{url_for('static', filename='atomlogo.png')}}" alt="Atom" width="150" height="150" style="position: absolute; right: -300px; top: 0px;">
-    </svg>
+    <style>
+        .myDiv{
+            background-color: rgb(0, 132, 255);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+    <h1>
+        <div class = "myDiv">
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50px" fill="white">Welcome to Atom framework</text>
+            <img src="{{url_for('static', filename='atomlogo.png')}}" alt="DenV" width="300" height="300" style="position: absolute; right: 60px; top: -60px;">
+        </div>
 </h1>
 <body style="background-color:rgb(237, 243, 249);">
     <p align="center"><a href="home.html"><button>Home</button></a> <a href = "services"><button>Services</button></a> <a href = "product"><button>Products</button></a> <a href="about_us"><button>About us</button></a> <a><button>My account</button></a></p><br><br>
