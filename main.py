@@ -51,6 +51,13 @@ def use_denv():
 def denv_tutorial():
     return flask.render_template('denv_tutorial.html')
 
+@app.route('/services', methods=['GET', 'POST'])
+def services():
+    return flask.render_template('services.html')
+
+@app.route('/product',methods=['GET'])
+def product():
+    return flask.render_template('product.html')
 if __name__ == '__main__':
     app.run(debug=True)
     # app.run(host = "0.0.0.0",port=80,debug=True)
